@@ -178,6 +178,3 @@ cython_debug/
 # Agentuity
 .agentuity
 .agentuity-crash-*.
-
-process-doc.py
-process-doc.pyc

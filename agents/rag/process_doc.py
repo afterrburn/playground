@@ -124,34 +124,3 @@ def generate_docs_chunks(docs_path):
         doc_chunks = hybrid_chunk_document(doc)
         all_chunks.extend(doc_chunks)
     return all_chunks
-
-
-# # Your existing loader
-# loader = DirectoryLoader("./docs", glob="**/*.mdx")  
-# docs = loader.load()
-
-# # Apply hybrid chunking to all documents
-# all_chunks = []
-# for doc in docs:
-#     doc_chunks = hybrid_chunk_document(doc)
-#     all_chunks.extend(doc_chunks)
-
-# # Display results
-# print(f"Total chunks created: {len(all_chunks)}")
-# print("\n" + "="*80)
-
-# # Randomly sample 2 chunks to display
-# import random
-# # Get the last 10 chunks (or all if less than 10)
-# last_chunks = all_chunks[-min(10, len(all_chunks)):]
-
-# for i, chunk in enumerate(last_chunks):
-#     print(f"\nChunk {len(all_chunks)-len(last_chunks)+i+1} of {len(all_chunks)}:")
-#     print(f"Content Type: {chunk.metadata.get('content_type', 'unknown')}")
-#     print(f"Source: {chunk.metadata.get('source', 'unknown')}")
-#     print(f"Chunk Size: {len(chunk.page_content)} characters")
-#     print("─" * 50)
-    
-#     content = chunk.page_content
-#     print(content)
-#     print("─" * 50)
